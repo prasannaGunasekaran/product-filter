@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+  }
+
+html
+{
+    font-size:16px;
+}
+
+
+body
+{
+    background-color: #64a39c5f;
+    padding: 1rem;
+    height: 100vh;
+}
+
+
+.box{
+    height: 8rem;
+    border: 5px solid rgb(77, 121, 145);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    transform-origin: top;
+  }
+  
+.box img:hover{
+ transform: scale(1.5);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,2fr));
+    gap: 1rem;
+  }
+
+  .main{
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .btns button{
+    width:85px;
+    height: 30px;
+    border: none;
+    font-size: 0.7rem;
+    background-color: #00b894;
+    color:#fff;
+    border: 2px solid #00b894;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+.btns button:hover,
+.btns .btn-clicked
+{
+  background-color: #64a39c5f;
+}
+ 
+
+.serch{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    padding: 0 10px;
+    border:2px solid #00b894;
+    border-radius: 3px;
+    font-size: 0.6rem;
+  
+}
+
+
